@@ -1,0 +1,19 @@
+﻿
+.action-section {
+    padding: 20px 0;
+    background: $action-section-background-color;
+  }
+
+  .action-section .btn {
+    background: $action-section-button-background-color;
+    border-color: $action-section-button-background-color;
+    color: #333333;
+    text-shadow: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+  }
+  .action-section .btn:active,
+  .action-section .btn:hover {
+    background: $action-section-button-active-background-color;
+    border-color: $action-section-button-active-background-color;
+  }

@@ -1,0 +1,16 @@
+.card {
+  padding: 10px 15px;
+  border-radius: 0px;
+  background: $black-card-background-transparent;
+  color: $white-main;
+  border: 0px;
+
+  .card-title {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}

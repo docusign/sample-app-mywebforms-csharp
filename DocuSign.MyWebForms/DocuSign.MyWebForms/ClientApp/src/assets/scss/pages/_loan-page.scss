@@ -1,0 +1,50 @@
+﻿.loan-page {
+  .loan-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .embeddedForm {
+    border: 1px solid $divider;
+  }
+
+  span[aria-expanded='true'] {
+    .fa-square-plus {
+      display: none;
+    }
+  }
+
+  span[aria-expanded='false'] {
+    .fa-square-minus {
+      display: none;
+    }
+  }
+
+  pre {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $pre-background-color;
+    border: 1px solid $pre-border-color;
+    border-radius: 4px;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: $code-background-color;
+    background-color: $code-color;
+    border-radius: 4px;
+  }
+
+  tt {
+    padding: 2px 4px;
+    font-size: 90%;
+    background-color: $tt-background-color;
+    border-radius: 4px;
+  }
+}

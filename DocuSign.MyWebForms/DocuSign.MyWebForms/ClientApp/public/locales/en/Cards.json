@@ -1,0 +1,79 @@
+﻿{
+  "Cards": [
+    {
+      "Title": "Personal Loan",
+      "Value": "2.75% - 3.15%",
+      "FeaturesTitle": "DocuSign Features:",
+      "Link": "/loan/personal",
+      "Features": [
+        {
+          "Text": "Web Forms",
+          "Title": "A seamless form-filling experience that makes data collection easier"
+        }, 
+        {
+          "Text": "Single signer",
+          "Title": "Only one signer on this document"
+        },
+        {
+          "Text": "Templates",
+          "Title": "Envelope models that help streamline the sending process"
+        },
+        {
+          "Text": "Focused view",
+          "Title": "Embed agreements directly within your application"
+        }
+      ],
+      "Button": "Get Started"
+    },
+    {
+      "Title": "Auto Loan",
+      "Value": "As low as 2.65%",
+      "FeaturesTitle": "DocuSign Features:",
+      "Link": "/loan/auto",
+      "Features": [
+        {
+          "Text": "Web Forms",
+          "Title": "A seamless form-filling experience that makes data collection easier"
+        }, 
+        {
+          "Text": "Templates",
+          "Title": "Envelope models that help streamline the sending process"
+        },
+        {
+          "Text": "Multiple signers",
+          "Title": "Use routing orders to add multiple signers"
+        },
+        {
+          "Text": "Embedded signing",
+          "Title": "Sign without leaving the application"
+        }
+      ],
+      "Button": "Get Started"
+    },
+    {
+      "Title": "Sailboat Loan",
+      "Value": "High-seas Fun!",
+      "FeaturesTitle": "DocuSign Features:",
+      "Link": "/loan/sailboat",
+      "Features": [
+        {
+          "Text": "Web Forms",
+          "Title": "A seamless form-filling experience that makes data collection easier"
+        },
+        {
+          "Text": "Templates",
+          "Title": "Envelope models that help streamline the sending process"
+        },
+        {
+          "Text": "Embedded signing",
+          "Title": "Sign without leaving the application"
+        },
+        {
+          "Text": "Auto-place (anchor) positioning",
+          "Title": "Place tabs at every location where a specified text string appears in a document"
+        }
+      ],
+      "Button": "Get Started"
+    }
+  ]
+}

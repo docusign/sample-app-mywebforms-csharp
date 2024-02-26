@@ -1,0 +1,72 @@
+{
+  "FeaturesTitle": "This Sample Features:",
+  "CodeFlowTitle": "Code Flow:",
+  "GeneralCollapseTitle": "See behind the scenes",
+  "JsonCollapseTitle": "Click to view example snippet",
+  "LoanTitles": [
+    "Personal Loan Application",
+    "Auto Loan Application",
+    "Sailboat Loan Application"
+  ],
+  "LoanSteps": [
+    [
+      {
+        "Title": "Prerequisite",
+        "Text": "The web form configuration used in this example has already been created and activated in the DocuSign account that was used to configure this app. Web forms can be created with the <a href='https://support.docusign.com/s/document-item?_gl=1*keofxi*_gcl_au*MjAyNDQ0NTI5NC4xNzA4NDUxMzUw*_ga*MTMwNDU1MDA5NS4xNzA4MDM0Njgy*_ga_1TZ7S9D6BQ*MTcwODQ1MTM1MC43LjEuMTcwODQ1MzAwMy42MC4wLjA.&_ga=2.189297643.1511523558.1708451350-1304550095.1708034682&bundleId=gmi1660583110357&topicId=gpc1660591510274.html'>Web Forms builder</a>. In this example, a web form configuration was created using a template that exists in the account.\n"
+      },
+      {
+        "Title": "Step 1",
+        "Text": "<p>An instance of the form is created with the Web Forms API using the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> endpoint. The client user ID is set to a unique value that will be used to identify the user who will fill out the form. The <code>expirationOffset</code> parameter determines the amount of time in hours until the instance will expire.</p><p>To create and send a web form instance, send an HTTPS POST request to:<pre>POST //webforms/v1.1/accounts/{account_id}/forms/{form_id}/instances</pre></p>",
+        "Json": "<pre>{\n  \"clientUserId\": \"1234-5678-abcd-ijkl\",\n  \"expirationOffset\": \"3600\"\n}</pre>"
+      },
+      {
+        "Title": "Step 2",
+        "Text": "<p>The web form instance is embedded on the page with <a href='https://developers.docusign.com/docs/web-forms-api/plan-integration/render-instances/#use-docusign-js-to-render-web-form-instance-urls'>DocuSign JS</a>. DocuSign JS is a JavaScript client library script that enables you to embed web form instances in your web application. DocuSign JS creates an iframe in which the web form instance will be displayed, and then loads the web form instance from the URL that your application passes to it. The web form instance URL is made up of the form URL and the instance token that comes from the response of the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> method from Step 1.</p><p>After the user fills out the form, the document is embedded in the same iframe with <a href='https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/embedding/#focused-view'>focused view</a> for the user to sign.</p>"
+      },
+      {
+        "Title": "Step 3",
+        "Text": "<p>The listener in DocuSign JS receives the <code>sessionEnd</code> <a href='https://developers.docusign.com/docs/web-forms-api/plan-integration/render-instances/#form-and-envelope-events'>event</a> indicating that the signer has completed the document. When signing has been completed, a new page is embedded in the iframe to indicate to the user that the envelope is complete.</p>"
+      }
+    ],
+    [
+      {
+        "Title": "Prerequisite",
+        "Text": "The web form configuration used in this example has already been created and activated in the DocuSign account that was used to configure this app. Web forms can be created with the <a href='https://support.docusign.com/s/document-item?_gl=1*keofxi*_gcl_au*MjAyNDQ0NTI5NC4xNzA4NDUxMzUw*_ga*MTMwNDU1MDA5NS4xNzA4MDM0Njgy*_ga_1TZ7S9D6BQ*MTcwODQ1MTM1MC43LjEuMTcwODQ1MzAwMy42MC4wLjA.&_ga=2.189297643.1511523558.1708451350-1304550095.1708034682&bundleId=gmi1660583110357&topicId=gpc1660591510274.html'>Web Forms builder</a>. In this example, a web form configuration was created using a template that exists in the account.\n"
+      },
+      {
+        "Title": "Step 1",
+        "Text": "<p>An instance of the form is created with the Web Forms API using the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> endpoint. The client user ID is set to a unique value that will be used to identify the user who will fill out the form. The <code>expirationOffset</code> parameter determines the amount of time in hours until the instance will expire.</p><p>To create and send a web form instance, send an HTTPS POST request to:<pre>POST //webforms/v1.1/accounts/{account_id}/forms/{form_id}/instances</pre></p>",
+        "Json": "<pre>{\n  \"clientUserId\": \"1234-5678-abcd-ijkl\",\n  \"expirationOffset\": \"3600\"\n}</pre>"
+      },
+      {
+        "Title": "Step 2",
+        "Text": "<p>The web form instance is embedded on the page with <a href='https://developers.docusign.com/docs/web-forms-api/plan-integration/render-instances/#use-docusign-js-to-render-web-form-instance-urls'>DocuSign JS</a>. DocuSign JS is a JavaScript client library script that enables you to embed web form instances in your web application. DocuSign JS creates an iframe in which the web form instance will be displayed, and then loads the web form instance from the URL that your application passes to it. The web form instance URL is made up of the form URL and the instance token that comes from the response of the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> method from Step 1.</p><p>After the user fills out the form, the document is embedded in the same iframe with <a href='https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/embedding/#focused-view'>focused view</a> for the user to sign.</p>"
+      },
+      {
+        "Title": "Step 3",
+        "Text": "<p>We use the <a href='https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/'>EnvelopeViews:createRecipient</a> API to generate a signing URL for the recipient to sign the envelope’s document with embedded signing.</p><p>Once the envelope is sent, we save the envelope ID and recipient information to our session, and then redirect to the /sign/embedded page. There we retrieve the envelope ID and recipient info from our session and create the recipient view by generating the URL for the envelope and displaying its document in a full-width and full-height iframe.</p><p>To create the recipient view of the envelope, send an HTTPS POST request to: <pre>POST /v2.1/accounts/{accountId}/envelopes/{envelopeId}/views/recipient</pre></p>",
+        "Json": "<pre>{\n  \"clientUserId\": \"1001\",\n  \"userId\": null,\n  \"userName\": \"-- RECIPIENT NAME HERE --\",\n  \"email\": \"-- RECIPIENT EMAIL HERE --\",\n  \"recipientId\": \"1\",\n  \"returnUrl\": \"-- RETURN URL HERE --\",\n  \"pingUrl\": null,\n  \"pingFrequency\": null,\n  \"authenticationMethod\": \"email\"\n}\n</pre>"
+      }
+    ],
+    [
+      {
+        "Title": "Prerequisite",
+        "Text": "The web form configuration used in this example has already been created and activated in the DocuSign account that was used to configure this app. Web forms can be created with the <a href='https://support.docusign.com/s/document-item?_gl=1*keofxi*_gcl_au*MjAyNDQ0NTI5NC4xNzA4NDUxMzUw*_ga*MTMwNDU1MDA5NS4xNzA4MDM0Njgy*_ga_1TZ7S9D6BQ*MTcwODQ1MTM1MC43LjEuMTcwODQ1MzAwMy42MC4wLjA.&_ga=2.189297643.1511523558.1708451350-1304550095.1708034682&bundleId=gmi1660583110357&topicId=gpc1660591510274.html'>Web Forms builder</a>. In this example, a web form configuration was created using a template that exists in the account.\n"
+      },
+      {
+        "Title": "Step 1",
+        "Text": "<p>An instance of the form is created with the Web Forms API using the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> endpoint. The client user ID is set to a unique value that will be used to identify the user who will fill out the form. The <code>expirationOffset</code> parameter determines the amount of time in hours until the instance will expire.</p><p>To create and send a web form instance, send an HTTPS POST request to:<pre>POST //webforms/v1.1/accounts/{account_id}/forms/{form_id}/instances</pre></p>",
+        "Json": "<pre>{\n  \"clientUserId\": \"1234-5678-abcd-ijkl\",\n  \"expirationOffset\": \"3600\"\n}</pre>"
+      },
+      {
+        "Title": "Step 2",
+        "Text": "<p>The web form instance is embedded on the page with <a href='https://developers.docusign.com/docs/web-forms-api/plan-integration/render-instances/#use-docusign-js-to-render-web-form-instance-urls'>DocuSign JS</a>. DocuSign JS is a JavaScript client library script that enables you to embed web form instances in your web application. DocuSign JS creates an iframe in which the web form instance will be displayed, and then loads the web form instance from the URL that your application passes to it. The web form instance URL is made up of the form URL and the instance token that comes from the response of the <a href='https://developers.docusign.com/docs/web-forms-api/reference/webforms/instances/createinstance/'>Instances:createInstance</a> method from Step 1.</p><p>After the user fills out the form, the document is embedded in the same iframe with <a href='https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/embedding/#focused-view'>focused view</a> for the user to sign.</p>"
+      },
+      {
+        "Title": "Step 3",
+        "Text": "<p>We use the <a href='https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/'>EnvelopeViews:createRecipient</a> API to generate a signing URL for the recipient to sign the envelope’s document with embedded signing.</p><p>Once the envelope is sent, we save the envelope ID and recipient information to our session, and then redirect to the /sign/embedded page. There we retrieve the envelope ID and recipient info from our session and create the recipient view by generating the URL for the envelope and displaying its document in a full-width and full-height iframe.</p><p>To create the recipient view of the envelope, send an HTTPS POST request to: <pre>POST /v2.1/accounts/{accountId}/envelopes/{envelopeId}/views/recipient</pre></p>",
+        "Json": "<pre>{\n  \"clientUserId\": \"1001\",\n  \"userId\": null,\n  \"userName\": \"-- RECIPIENT NAME HERE --\",\n  \"email\": \"-- RECIPIENT EMAIL HERE --\",\n  \"recipientId\": \"1\",\n  \"returnUrl\": \"-- RETURN URL HERE --\",\n  \"pingUrl\": null,\n  \"pingFrequency\": null,\n  \"authenticationMethod\": \"email\"\n}\n</pre>"
+      }
+    ]
+  ]
+}

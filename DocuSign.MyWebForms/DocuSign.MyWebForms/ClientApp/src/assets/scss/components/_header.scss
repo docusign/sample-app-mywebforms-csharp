@@ -1,0 +1,12 @@
+.navbar .navbar-brand div {
+  font-size: 10px;
+  position: relative;
+  top: -4px;
+  opacity: 0.7;
+}
+.nav-link {
+  color: $white-main !important;
+}
+.nav-link:active, .nav-link:hover {
+  color: $white-main-hover !important;
+}

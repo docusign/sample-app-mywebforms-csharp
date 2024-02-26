@@ -1,0 +1,21 @@
+.status-page {
+  .loader {
+    margin-top: 20px;
+  }
+  .main-title {
+    margin-top: 20px;
+  }
+
+  .h3-hint {
+    font-size: 12px;
+  }
+
+  .no-items-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .table tbody > tr:last-child > td {
+    border-bottom: 0;
+  }
+}

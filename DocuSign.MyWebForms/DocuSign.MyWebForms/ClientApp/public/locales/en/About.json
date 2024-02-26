@@ -1,0 +1,40 @@
+{
+  "Header1": "MyWebForms Sample App",
+  "Description1": "A sample loan application that demonstrates some common DocuSign API workflows including requesting signatures, embedded signing, forms and data, and real-time status.",
+  "GitHubLinkTitle": "Source on GitHub: ",
+  "GitHubLink": "https://github.com/DocuSign/sample-app-loanco-nodejs",
+  "DocuSignLinkTitle": "DocuSign.com",
+  "DocuSignLink": "http://www.docusign.com/",
+  "FeaturesSection":{
+    "Title": "MyWebForms features:",
+    "Element1": "Send document for signature",
+    "Element2": "Send from template",
+    "Element3": "Embedded signing",
+    "Element4": "Forms and form-field Data",
+    "Element5": "Real-time status",
+    "Element6": "Custom br/anding",
+    "Element7": "Document visibility",
+    "Element8": "Signer Attachment Tabs",
+    "Element9": "Calculated (formula) fields",
+    "Element10": "Download documents and audit trails"
+  },
+  "LinksList":{
+    "Title": "API Tools and Links",
+    "Subtitle1": "Developer Center",
+    "Link1": "https://developers.docusign.com",
+    "Subtitle2": "DocuSign eSignature API Code Examples",
+    "Link2": "https://developers.docusign.com/docs/esign-rest-api/how-to/",
+    "Subtitle3": "DocuSign eSignature API Documentation",
+    "Link3": "https://developers.docusign.com/docs/esign-rest-api/reference",
+    "Subtitle4": "Developer Community",
+    "Link4": "http://stackoverflow.com/questions/tagged/docusignapi"
+  },
+  "AboutSection":{
+    "Title": "About DocuSign",
+    "Element1": "More than <strong>600 million users</strong> in <strong>188 countries</strong>",
+    "Element2": "More than 300,000 companies",
+    "Element3": "More than 300,000 new unique users join The DocuSign Global Trust Network every day",
+    "Element4": "More than 64% of documents are completed within one hour",
+    "Element5": "DocuSign is available in 43 languages"
+  }
+}

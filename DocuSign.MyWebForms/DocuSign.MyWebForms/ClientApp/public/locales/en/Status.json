@@ -1,0 +1,17 @@
+{
+  "Header1": "Submissions Status",
+  "Header2": "Only available in your current session.",
+  "NoItemsHeader": "Create some loan transactions and they will start showing up here...",
+  "RestartSession": "restart session",
+  "DocumentsDropDown": {
+    "Title": "Options",
+    "Download": "Download",
+    "Combined": "Combined"
+  },
+  "Table": {
+    "Column1Name": "Subject",
+    "Column2Name": "Applicant",
+    "Column3Name": "Status",
+    "Column4Name": "Last Updated"
+  }
+}

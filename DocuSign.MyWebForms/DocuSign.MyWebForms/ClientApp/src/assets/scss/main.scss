@@ -1,0 +1,16 @@
+// Entry point for your Sass build
+@import "core/all";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "components/all";
+@import "pages/all";
+@import "layouts/all";
+
+body {
+  font-family: $font;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: $text-decoration;
+}

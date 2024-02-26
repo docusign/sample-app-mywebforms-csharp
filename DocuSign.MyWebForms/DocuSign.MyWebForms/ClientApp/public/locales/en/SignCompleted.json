@@ -1,0 +1,48 @@
+﻿{
+  "StatusLink": "View My Submissions",
+  "ActionTitle": "Get Started with the DocuSign API Today",
+  "ActionButton": "Get Your Developer Account",
+  "ActionText": "With a developer account you can test our APIs for free! Developer accounts do not expire and have Enterprise-level features enabled.",
+  "InfoText": "<h4>Possible signing return events</h4><div><p>When a signer returns from an embedded signing experience, your application receives one of the following events in the query string: </p><div><p><strong>signing_complete</strong><br>The recipient has signed the document!  The document will be securely stored on the DocuSign, Inc. servers.</p><p><strong>cancel</strong><br>The recipient decides to finish later. The recipient clicked 'Finish Later' instead of 'Decline to Sign'</p><p><strong>decline</strong><br>The recipient declined to sign the document. This has VOIDED the document.</p><p><strong>exception</strong><br>An exception has occurred on the server during the signing session. Please check the parameters passed to the web service methods.</p><p><strong>fax_pending</strong><br>Recipient has a fax pending.</p><p><strong>session_timeout</strong><br>The recipient did not sign the document in time. The timeout is set to 20 minutes.</p><p><strong>ttl_expired</strong><br>The token was not used within the timeout period or the token was already accessed.</p><p><strong>viewing_complete</strong><br>The recipient did not need to sign but has completed the viewing ceremony. <p><a href='https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/embedding/' target='_blank'>Learn more about Embedded Signing</a></p></div></div>",
+  "HomeLink": "Back to Home",
+  "NextSignerLink": "Click to go to the next Signer",
+  "CompletedText": "Your application has been completed and is pending review. We will be in touch soon!",
+  "EventsText": {
+    "signing_focused_view_complete": {
+      "Title": "Signing Complete using Focused View!",
+      "SubText": "You have signed the document! The document will be securely stored on the DocuSign, Inc. servers."
+    },
+    "signing_complete": {
+      "Title": "Signing Complete!",
+      "SubText": "You have signed the document! The document will be securely stored on the DocuSign, Inc. servers."
+    },
+    "cancel": {
+      "Title": "Return Event: cancel",
+      "SubText": "You have canceled out of the signing experience. You clicked 'Finish Later' instead of 'Decline to Sign'"
+    },
+    "decline": {
+      "Title": "Return Event: decline",
+      "SubText": "You have declined to sign the document. This has VOIDED the document."
+    },
+    "exception": {
+      "Title": "Return Event: exception",
+      "SubText": "An exception has occurred on the server. Please check the parameters passed to the Web Service Methods."
+    },
+    "fax_pending": {
+      "Title": "Return Event: fax_pending",
+      "SubText": "You have a fax pending."
+    },
+    "session_timeout": {
+      "Title": "Return Event: session_timeout",
+      "SubText": "You did not sign the document in time. The timeout is set to 20 minutes."
+    },
+    "ttl_expired": {
+      "Title": "Return Event: ttl_expired",
+      "SubText": "Trusted connection has expired. Server communication may be a problem."
+    },
+    "viewing_complete": {
+      "Title": "Return Event: viewing_complete",
+      "SubText": "You have viewed the document without signing it."
+    }
+  }
+}
