@@ -2,7 +2,7 @@
 
 ## Introduction
 
-MyWebForms App sample app is to provide ISV developers with a practical example of how to sign documents using web forms with focused view and embedded signing. The application is Single Page Application leveraging the C# DocuSign SDK. The SPA is created using React.js and .Net Web API. You can find a live instance at [https://MyWebForms.azurewebsites.net/](https://MyWebForms.azurewebsites.net/).
+MyWebForms App sample app is to provide ISV developers with a practical example of how to sign documents using web forms with focused view and embedded signing. The application is Single Page Application leveraging the C# DocuSign SDK. The SPA is created using React.js and .Net Web API. You can find a live instance at [https://mywebforms.sampleapps.docusign.com](https://mywebforms.sampleapps.docusign.com).
 
 MyWebForms demonstrates the following:
 
