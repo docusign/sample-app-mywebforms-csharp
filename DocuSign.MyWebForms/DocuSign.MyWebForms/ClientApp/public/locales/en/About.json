@@ -22,19 +22,19 @@
     "Title": "API Tools and Links",
     "Subtitle1": "Developer Center",
     "Link1": "https://developers.docusign.com",
-    "Subtitle2": "DocuSign eSignature API Code Examples",
+    "Subtitle2": "Docusign eSignature API Code Examples",
     "Link2": "https://developers.docusign.com/docs/esign-rest-api/how-to/",
-    "Subtitle3": "DocuSign eSignature API Documentation",
+    "Subtitle3": "Docusign eSignature API Documentation",
     "Link3": "https://developers.docusign.com/docs/esign-rest-api/reference",
     "Subtitle4": "Developer Community",
     "Link4": "http://stackoverflow.com/questions/tagged/docusignapi"
   },
   "AboutSection":{
-    "Title": "About DocuSign",
+    "Title": "About Docusign",
     "Element1": "More than <strong>600 million users</strong> in <strong>188 countries</strong>",
     "Element2": "More than 300,000 companies",
-    "Element3": "More than 300,000 new unique users join The DocuSign Global Trust Network every day",
+    "Element3": "More than 300,000 new unique users join The Docusign Global Trust Network every day",
     "Element4": "More than 64% of documents are completed within one hour",
-    "Element5": "DocuSign is available in 43 languages"
+    "Element5": "Docusign is available in 43 languages"
   }
 }
