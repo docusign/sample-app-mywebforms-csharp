@@ -1,10 +1,10 @@
 {
   "ApplicationName": "MyWebForms",
-  "SecondaryName": "A DocuSign Sample App",
+  "SecondaryName": "A Docusign Sample App",
   "GitHubLink": "GitHub Source",
   "StatusLink": "Status",
   "AboutLink": "About",
-  "Copyright": "© 2024 DocuSign Inc.",
+  "Copyright": "© 2024 Docusign Inc.",
   "ApiDescription": {
     "Title": "Behind the scenes"
   },

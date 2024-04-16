@@ -3,7 +3,7 @@
     {
       "Title": "Personal Loan",
       "Value": "2.75% - 3.15%",
-      "FeaturesTitle": "DocuSign Features:",
+      "FeaturesTitle": "Docusign Features:",
       "Link": "/loan/personal",
       "Features": [
         {
@@ -28,7 +28,7 @@
     {
       "Title": "Auto Loan",
       "Value": "As low as 2.65%",
-      "FeaturesTitle": "DocuSign Features:",
+      "FeaturesTitle": "Docusign Features:",
       "Link": "/loan/auto",
       "Features": [
         {
@@ -53,7 +53,7 @@
     {
       "Title": "Sailboat Loan",
       "Value": "High-seas Fun!",
-      "FeaturesTitle": "DocuSign Features:",
+      "FeaturesTitle": "Docusign Features:",
       "Link": "/loan/sailboat",
       "Features": [
         {
