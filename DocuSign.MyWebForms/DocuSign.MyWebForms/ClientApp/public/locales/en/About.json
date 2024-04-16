@@ -1,9 +1,9 @@
 {
   "Header1": "MyWebForms Sample App",
-  "Description1": "A sample loan application that demonstrates some common DocuSign API workflows including requesting signatures, embedded signing, forms and data, and real-time status.",
+  "Description1": "A sample loan application that demonstrates some common Docusign API workflows including requesting signatures, embedded signing, forms and data, and real-time status.",
   "GitHubLinkTitle": "Source on GitHub: ",
-  "GitHubLink": "https://github.com/DocuSign/sample-app-loanco-nodejs",
-  "DocuSignLinkTitle": "DocuSign.com",
+  "GitHubLink": "https://github.com/docusign/sample-app-mywebforms-csharp",
+  "DocuSignLinkTitle": "Docusign.com",
   "DocuSignLink": "http://www.docusign.com/",
   "FeaturesSection":{
     "Title": "MyWebForms features:",
