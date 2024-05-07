@@ -27,7 +27,9 @@ public class DocumentService : IDocumentService
 
         var envelopesApi = new EnvelopesApi(docuSignClient);
 
-        var documentStream = await envelopesApi.GetDocumentAsync(_accountRepository.AccountId, envelopeId, documentId);
+        var options = new EnvelopesApi.GetDocumentOptions() { certificate = "true" };
+
+        var documentStream = await envelopesApi.GetDocumentAsync(_accountRepository.AccountId, envelopeId, documentId, options);
 
         return documentStream;
     }

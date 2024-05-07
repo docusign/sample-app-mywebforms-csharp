@@ -16,17 +16,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DocuSign.eSign.dll" Version="6.6.0" />
-    <PackageReference Include="DocuSign.WebForms" Version="1.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.11" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.11" />
+    <PackageReference Include="DocuSign.eSign.dll" Version="7.0.0-rc2" />
+    <PackageReference Include="DocuSign.WebForms" Version="2.0.0-rc2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.18" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.18" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+    <PackageReference Include="NuGet.Packaging" Version="6.6.2" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="System.Runtime.Caching" Version="7.0.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
