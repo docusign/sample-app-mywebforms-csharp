@@ -31,7 +31,7 @@ MyWebForms demonstrates the following:
 
 ## Prerequisites
 
-- Create a Docusign [Developer Account](https://go.docusign.com/o/sandbox/).
+- Create a Docusign [Developer Account](https://www.docusign.com/developers/sandbox).
 - Create an application on the [Apps and Keys](https://admindemo.docusign.com/authenticate?goTo=appsAndKeys) page.
 - Press "GENERATE RSA" and save the generated key pairs (it will be used later in "Settings configuration" section to configure "private.key")
 - Installed and configured [Node.js](https://nodejs.org/en/download)
