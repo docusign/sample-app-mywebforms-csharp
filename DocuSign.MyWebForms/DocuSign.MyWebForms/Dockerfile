@@ -1,5 +1,5 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["DocuSign.MyWebForms/*.sln", "DocuSign.MyWebForms/"]
 COPY ["DocuSign.MyWebForms/DocuSign.MyWebForms/DocuSign.MyWebForms.csproj", "DocuSign.MyWebForms/DocuSign.MyWebForms/"]
@@ -25,7 +25,7 @@ WORKDIR /node
 COPY ["DocuSign.MyWebForms/DocuSign.MyWebForms/ClientApp", "/node"]
 RUN npm install && npm run build
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 COPY --from=node-builder /node/build ./ClientApp/dist
